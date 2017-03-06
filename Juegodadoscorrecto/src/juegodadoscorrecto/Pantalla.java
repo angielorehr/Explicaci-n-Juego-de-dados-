@@ -41,8 +41,14 @@ public class Pantalla extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        valor1.setBackground(new java.awt.Color(0, 0, 0));
+        valor1.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        valor1.setForeground(new java.awt.Color(255, 0, 51));
+
+        valor2.setBackground(new java.awt.Color(255, 0, 0));
         valor2.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
 
+        botonJugar.setBackground(new java.awt.Color(255, 255, 0));
         botonJugar.setText("Jugar");
         botonJugar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -94,7 +100,7 @@ public class Pantalla extends javax.swing.JFrame {
                     .addComponent(valor2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(botonJugar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonApostar)
                     .addComponent(textoApuesta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
